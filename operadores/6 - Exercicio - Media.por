@@ -3,6 +3,9 @@ programa {
   /* Cálculo de média: 
     Faça um programa que leia quatro notas de um aluno e exiba a média final.
   */
+
+  inclua biblioteca Matematica
+
   funcao inicio() {
     
     real nota1
@@ -22,7 +25,7 @@ programa {
     escreva("\nDigite a Quarta nota do aluno: ")
     leia(nota4)
 
-    real media = (nota1 + nota2 + nota3 + nota4) / 4
+    real media = Matematica.arredondar((nota1 + nota2 + nota3 + nota4) / 4, 2)
 
     escreva("\nA média final do aluno é ", media)
   }
