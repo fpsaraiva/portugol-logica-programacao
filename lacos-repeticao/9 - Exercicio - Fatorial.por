@@ -4,26 +4,28 @@ programa {
 
   funcao inicio() {
 
-    inteiro numero
-    inteiro fatorial = 1 // Inicializa o fatorial como 1, pois o fatorial de 0 e 1 é 1
+    inteiro numeroDigitadoPeloUsuario
+    inteiro resultadoFinalFatorial = 1 // Inicializa o fatorial como 1, pois o fatorial de 0 e 1 é 1
 
     //Pede ao usuário um número inteiro
     escreva("Digite um número inteiro para calcular o fatorial: ")
+    leia(numeroDigitadoPeloUsuario)
     
     // Verifica se o número é negativo, pois não é possível calcular fatorial de número negativo
-    se ()
+    se (numeroDigitadoPeloUsuario < 0)
     {
-        
-    }
-    senao
+        escreva("Vc digitou um número negativo! Faça a operação novamente")
+    } senao
     {
         // Calcula o fatorial
-        para ()
+        para (inteiro i = 1; i <= numeroDigitadoPeloUsuario; i++)
         {
-            
+            resultadoFinalFatorial = resultadoFinalFatorial * i
+            escreva("\n", resultadoFinalFatorial)
         }
 
-        escreva("O fatorial de ", numero, " é: ", fatorial)
+        escreva("O fatorial de ", numeroDigitadoPeloUsuario, " é: ", resultadoFinalFatorial)
     }
+    
   }
 }
